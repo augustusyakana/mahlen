@@ -16,10 +16,11 @@ function createColumns(numRows) {
         for (let columns = 0; columns < rows.length; columns++) {
             let columnCell = document.createElement('div');
             columnCell.classList = 'columnCell';
-            rows[columns].appendChild(columnCell);
+            let columnCells = rows[columns].appendChild(columnCell);
+            
         }
     }
 }
 
-createRows(16);
-createColumns(16);
+createRows(18);
+createColumns(18);
