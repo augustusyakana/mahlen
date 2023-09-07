@@ -1,27 +1,22 @@
-const container = document.querySelector('#container');
-let rows = document.getElementsByClassName('cell');
-let columns = document.getElementsByClassName('columnCell');
+const gridContainer = document.querySelector('.gridContainer');
+let numberOfRows = 16
+
+let containerSize = gridContainer.clientWidth;
+let cellSize = 400 / numberOfRows;
 
 
-function createRows(num) {
-    for (let r = 0; r < num; r++) {
-        let cell = document.createElement('div');
-        cell.classList = 'cell'
-        container.appendChild(cell);
 
-    }
-}
-
-function createColumns(numRows) {
-    for (let i = 0; i < numRows; i++) {
-        for (let columns = 0; columns < rows.length; columns++) {
-            let columnCell = document.createElement('div');
-            columnCell.classList = 'columnCell';
-            rows[columns].appendChild(columnCell);
+function createGrid(rows) {
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < rows; j++) {
+            let cells = document.createElement('div');
+            cells.classList = "cells";
+            cells.setAttribute('style', `width: ${cellSize}px;`);
+            gridContainer.appendChild(cells);
             
         }
     }
 }
 
-createRows(18);
-createColumns(18);
+console.log(squares);
+createGrid(numberOfRows);

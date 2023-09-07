@@ -1,57 +1,27 @@
-html {
-    scroll-behavior: smooth;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body {
 
-    background-color: rgba(66, 13, 13, 0.84);
-    color: white;
+.gridContainer {
+
+    /* border: 2px solid black; */
+    justify-content: center;
+    box-shadow: 5px 5px 10px black;
+    
+    width: 432px;
+    height: 432px;
 
     display: flex;
-    flex-basis: auto;
-}
+    flex-wrap: wrap;
 
-.title {
-    margin: 5px;
-}
-
-.controls {
-    border: 2px solid orange;
-    margin: 5px;
-}
-
-.cell {
-
-    width: 900px;
-    height: fit-content;
-
-    display: inline-flex;
-    flex-direction: column;
-
-    margin: 0;
-
-    /* box-shadow: 5px 5px 10px black; */
-}
-
-.columnCell {
-
-    flex-shrink: 2;
-
-    width: 25px;
-    height: 25px;
-
-    border: 1px solid rgb(195, 195, 195);
-    background-color: white;
-    margin: 0;
 
 }
 
-.container {
-   width: 500px;
-    height: fit-content;
-    display: inline-flex;
-    
-    
+.cells {
 
-    border: 5px solid red;
+    border: 1px solid gainsboro;
+
 }
