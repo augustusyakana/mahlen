@@ -6,22 +6,19 @@ body {
 
 
 .gridContainer {
+    border: 2px solid black;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    height: 575px;
+    width: 575px;
 
-    /* border: 2px solid black; */
-    justify-content: center;
-    box-shadow: 5px 5px 10px black;
     
-    width: 432px;
-    height: 432px;
-
-    display: flex;
-    flex-wrap: wrap;
-
-
 }
 
 .cells {
-
-    border: 1px solid gainsboro;
+    background-color: white; 
+    border: 1px solid black;
+    
 
 }
