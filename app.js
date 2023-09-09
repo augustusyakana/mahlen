@@ -3,6 +3,7 @@ const clrBtn = document.querySelector('.clear');
 const rnbwBtn = document.querySelector('.rainbow');
 const blkBtn = document.querySelector('.black');
 const gridBtn = document.querySelector('.size');
+const eraseBtn = document.querySelector('.erase');
 
 let numberOfRows = 16
 
@@ -61,6 +62,15 @@ blkBtn.addEventListener('click', () => {
     for (let i = 0; i < numberOfRows * numberOfRows; i++) {
         cells[i].addEventListener('mouseover', function(event){
             event.target.style.backgroundColor = 'black';
+        })
+    }
+})
+
+eraseBtn.addEventListener('click', () => {
+    let cells = gridContainer.children;
+    for (let i = 0; i < numberOfRows * numberOfRows; i++) {
+        cells[i].addEventListener('mouseover', function(event){
+            event.target.style.backgroundColor = 'white';
         })
     }
 })
