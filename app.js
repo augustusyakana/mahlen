@@ -55,6 +55,7 @@ rnbwBtn.addEventListener('click', () => {
     }
 })
 
+
 blkBtn.addEventListener('click', () => {
     let cells = gridContainer.children;
     for (let i = 0; i < numberOfRows * numberOfRows; i++) {
@@ -71,7 +72,7 @@ function resetGrid(){
         gridContainer.innerHTML = '';
         createGrid(16);
     } else {
-        console.log(numberOfRows);
+        // console.log(numberOfRows);
         gridContainer.innerHTML = '';
         createGrid(numberOfRows);
     }
