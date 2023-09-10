@@ -76,7 +76,7 @@ eraseBtn.addEventListener('click', () => {
 })
 
 function resetGrid(){
-    numberOfRows = prompt("Enter Grid Size:                     1 to 99 only")
+    numberOfRows = prompt("Enter Grid Size (1 to 99 only):")
     if (numberOfRows < 1 || numberOfRows > 99) {
         alert('invalid input!');
         gridContainer.innerHTML = '';
