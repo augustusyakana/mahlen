@@ -3,7 +3,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(90, 48, 48);
+    background-color: rgb(157, 158, 230);
     font-family: 'Lemonada', cursive;
     color: white;
 
@@ -27,12 +27,13 @@ body {
 }
 
 button:hover {
-    box-shadow: 5px 5px 8px rgb(82, 7, 7);
+    box-shadow: 5px 5px 8px rgb(197, 0, 0);
     transform: scale(1.1);
 }
 
 button {
     font-family: 'Lemonada', cursive;
+    box-shadow: 3px 3px 8px black;
     width: 100px;
     background-color: aqua;
     border: 1px solid white;
